@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="frm1">
+        <div class="container ffrm">
+            <div class="frm">
+                <h1>
+                    Fill The From For Your Appointment
+                </h1>
+            </div>
+            <div class="frm2">
+                <form action="#" method="POST">
+                    <!-- Name, Age, Gender in one line -->
+                    <div class="form-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required>
+            
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <div class="form-row">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+            
+                    
+                    <div class="form-row">
+                        <label for="doctor">Choose Specialty:</label>
+                        <select id="doctor" name="doctor" required>
+                            <option value="Cardiologist">Cardiologist</option>
+                            <option value="General Surgeon">General Surgeon</option>
+                            <option value="Medicine Specialist">Medicine Specialist</option>
+                            <option value="Gynecologist">Gynecologist</option>
+                            <option value="Otolaryngologists (ENT)">Otolaryngologists (ENT)</option>
+                            <option value="Pediatrician">Pediatrician</option>
+                        </select>
+                        <label for="dn">Doctor Name:</label>
+                        <select id="name" name="dn" required>
+                            <option value="name">Dr. MI Sifat</option>
+                            <option value="name">Dr. Abdul Kalam</option>
+                            <option value="name">Dr. Rimon hossian</option>
+                            <option value="name">Dr. Asraf Howladar</option>
+                            <option value="name">Dr. Rafik Islam</option>
+                            <option value="name">Dr. Shihab hossian</option>
+                            <option value="name">Dr. Mehedi hossian</option>
+                        </select>
+            
+                        <label for="appointment-date">Appointment Date:</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+                    </div>
+                    <div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Any Massage:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                    </div>
+            
+                    
+                    <div class="frmb" >
+                        <a href="">Submit</a>
+                    </div>
+                </form>
+                  
+            </div>
+        </div>
+    </section>
+</body>
+</html>
